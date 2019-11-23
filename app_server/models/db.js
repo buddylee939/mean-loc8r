@@ -4,7 +4,6 @@ var dbURI = "mongodb://localhost/Loc8r";
 if (process.env.NODE_ENV === 'production') {
     console.log('heres the new uri ' + process.env.MONGODB_URI);
     dbURI = process.env.MONGOLAB_URI;
-    // dbURI = 'mongodb://pepAdmin:pepp9399@ds127399.mlab.com:27399/heroku_bxh5m41s';
 }
 mongoose.connect(dbURI, 
   {
